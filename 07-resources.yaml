@@ -6,12 +6,12 @@ spec:
   containers:
   - name: nginx
     image: nginx
-  resources:
-  # This is soft limit
-    requests:
-      cpu: "100m"
-      memory: "128Mi"
-  # limits should equal or more than the requests i.e hard limit
-    limits:
-      cpu: "100m"
-      memory: "128Mi"
+    resources:
+    # This is soft limit
+      requests:
+        cpu: "100m"
+        memory: "128Mi"
+    # limits should equal or more than the requests i.e hard limit
+      limits:
+        cpu: "100m"
+        memory: "128Mi"
