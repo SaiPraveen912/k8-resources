@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: pod-config
 spec:
-  container:
+  containers:
   - name: nginx
     image: nginx
     env:
@@ -17,3 +17,4 @@ spec:
         configMapKeyRef:
           name: daws78s      
           key: trainer
+
