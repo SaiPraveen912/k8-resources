@@ -6,5 +6,5 @@ provisioner: efs.csi.aws.com
 parameters:
   provisioningMode: efs-ap
   fileSystemId: fs-0926a0bd7f113bbd7
-  basePath: "/expense" # Admin will create \expense path we can do necessary things in this 
+  basePath: "/expense" # Admin will create \expense path we can do necessary things in this
   
