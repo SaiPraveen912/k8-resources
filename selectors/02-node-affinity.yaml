@@ -15,3 +15,12 @@ spec:
   containers:
   - name: with-node-affinity
     image: nginx
+  # if you add both affinity and tolerations there is 100 percent chance that Pod will be attached to certain nodes that we preffer
+  tolerations:
+  - key: "project"
+    operator: "Equal"
+    value: "expense"
+    effect: "NoSchedule"
+  - key: "project"
+    operator: "Exists"
+    effect: "NoSchedule"
