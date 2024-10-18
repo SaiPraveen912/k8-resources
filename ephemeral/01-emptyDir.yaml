@@ -30,7 +30,7 @@ spec:
     image: nginx
     volumeMounts:
     - name: nginx-logs
-      moutPath: /var/log/nginx/
+      mountPath: /var/log/nginx/
   - name: filebeat
     image: docker.elastic.co/beats/filebeat:7.5.0
     volumeMounts:
@@ -38,7 +38,7 @@ spec:
       mountPath: /usr/share/filebeat/filebeat.yml
       subPath: filebeat.yml 
     - name: nginx-logs
-      moutPath: /var/log/nginx/
+      mountPath: /var/log/nginx/
   volumes:
   - name: nginx-logs
     emptyDir: {}
